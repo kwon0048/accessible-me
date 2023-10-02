@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  background-color: #FFFFFF;
   margin: 0;
   padding: 0;
 }
@@ -18,6 +18,7 @@ h6 {
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 1rem;
+  background-color: #9ecdff;
 }
 
 img {
@@ -40,14 +41,22 @@ img {
 .main-nav ul li a {
   display: block;
   color: inherit;
+  color: rgb(255, 255, 255);
+  background-color: #0056b3;
   text-decoration: none;
   font-size: 1.25rem;
+  padding: 1.5rem 0;
 }
+
+.main-nav a:hover {
+  background-color: #c10202;
+}
+
 
 form input,
 form textarea {
   display: block;
-  width: 100%;
+  width: 96%;
   margin-bottom: 1rem;
   padding: .5rem 1rem;
 }
@@ -60,12 +69,40 @@ form textarea {
 }
 
 form button {
+  color: white;
   background: none;
-  border: 2px solid black;
+  background-color: #0056b3;
+  border: 2px solid #7ebbfb;
   padding: 1rem;
   text-transform: uppercase;
 }
 
 .site-footer {
   padding: 2rem 0;
+}
+
+.image-container {
+  width: 100％;
+  height: 255px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.skip-link {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  /* background-color: #007bff; */
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.skip-link {
+  background-color: #0056b3;
 }
