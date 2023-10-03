@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <a href="#main-content" class="skip-link">👇Skip to main content👇</a>
+  <a href="#main-content" class="skip-link" aria-label="Skip to main content">👇Skip to main content👇</a>
   <div class="container">
     <header role="banner">
       <h1 role="heading">Jam Box Studios</h1>
@@ -64,16 +64,16 @@
       <section class="contact-section" role="region">
         <h1 role="heading">Contact Us</h1>
         <form action="thanks.php" method="POST" role="form">
-          <label id="fullname-label" for="fullname">Full Name</label>
-          <input id="fullname" name="fullname" type="text" placeholder="Full Name" aria-labelledby="fullname-label" required>
+          <label id="fullname-label" for="fullname" aria-label="">Full Name</label>
+          <input id="fullname" name="fullname" type="text" placeholder="Full Name" aria-labelledby="fullname-label" aria-label="Your Full Name" required>
           <label id="email-label" for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="Email" aria-labelledby="email-label" required>
+          <input id="email" name="email" type="email" placeholder="Email" aria-labelledby="email-label" aria-label="Your Email" required>
           <label id="subject-label" for="subject">Subject</label>
-          <input id="subject" name="subject" type="text" placeholder="Subject" aria-labelledby="subject-label" required>
+          <input id="subject" name="subject" type="text" placeholder="Subject" aria-labelledby="subject-label" aria-label="Your Subject" required>
           <label id="message-label" for="message">Your Message</label>
-          <textarea id="message" name="message" placeholder="Write your message here" aria-labelledby="message-label"
+          <textarea id="message" name="message" placeholder="Write your message here" aria-labelledby="message-label" aria-label="Your Message"
             required></textarea>
-          <button type="submit" role="button">Send</button>
+          <button type="submit" role="button" aria-label="Send Message">Send</button>
         </form>
       </section>
     </main>
